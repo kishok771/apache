@@ -1,7 +1,9 @@
 - hosts: all
   tasks:
-  - name: Install the Apache
+  - name: Install the Apache and mariadb-server
     package:
-      name: httpd
+      name: 
+      - httpd
+      - mariadb-server
       state: present
    
